@@ -8,28 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8158B8602C264F5900FBF571 /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158B85F2C264F5900FBF571 /* MainPageView.swift */; };
+		89231B442C2C666200247BC0 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B2F2C2C666200247BC0 /* AuthViewModel.swift */; };
+		89231B452C2C666200247BC0 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B312C2C666200247BC0 /* LoginView.swift */; };
+		89231B462C2C666200247BC0 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B322C2C666200247BC0 /* RegistrationView.swift */; };
+		89231B472C2C666200247BC0 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B342C2C666200247BC0 /* InputView.swift */; };
+		89231B482C2C666200247BC0 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B352C2C666200247BC0 /* SettingsRowView.swift */; };
+		89231B492C2C666200247BC0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B372C2C666200247BC0 /* ProfileView.swift */; };
+		89231B4A2C2C666200247BC0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B392C2C666200247BC0 /* ContentView.swift */; };
+		89231B4C2C2C666200247BC0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89231B3D2C2C666200247BC0 /* User.swift */; };
+		89231B4D2C2C666200247BC0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89231B3F2C2C666200247BC0 /* Preview Assets.xcassets */; };
+		89231B502C2C6C9D00247BC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 89231B4F2C2C6C9D00247BC0 /* GoogleService-Info.plist */; };
 		8969A93C2C1C8D5D00449F5E /* AquifyATXApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8969A93B2C1C8D5D00449F5E /* AquifyATXApp.swift */; };
-		8969A93E2C1C8D5D00449F5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8969A93D2C1C8D5D00449F5E /* ContentView.swift */; };
 		8969A9402C1C8D5E00449F5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8969A93F2C1C8D5E00449F5E /* Assets.xcassets */; };
 		8969A9432C1C8D5E00449F5E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8969A9422C1C8D5E00449F5E /* Preview Assets.xcassets */; };
 		8969A94D2C1C8D5E00449F5E /* AquifyATXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8969A94C2C1C8D5E00449F5E /* AquifyATXTests.swift */; };
 		8969A9572C1C8D5E00449F5E /* AquifyATXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8969A9562C1C8D5E00449F5E /* AquifyATXUITests.swift */; };
 		8969A9592C1C8D5E00449F5E /* AquifyATXUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8969A9582C1C8D5E00449F5E /* AquifyATXUITestsLaunchTests.swift */; };
-		E08BF5112C2B0E2B007BCEA5 /* loginpageApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4E82C2B0E2B007BCEA5 /* loginpageApp.swift */; };
-		E08BF5122C2B0E2B007BCEA5 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4EA2C2B0E2B007BCEA5 /* AuthViewModel.swift */; };
-		E08BF5132C2B0E2B007BCEA5 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4EC2C2B0E2B007BCEA5 /* LoginView.swift */; };
-		E08BF5142C2B0E2B007BCEA5 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4ED2C2B0E2B007BCEA5 /* RegistrationView.swift */; };
-		E08BF5152C2B0E2B007BCEA5 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4EF2C2B0E2B007BCEA5 /* InputView.swift */; };
-		E08BF5162C2B0E2B007BCEA5 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4F02C2B0E2B007BCEA5 /* SettingsRowView.swift */; };
-		E08BF5172C2B0E2B007BCEA5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4F22C2B0E2B007BCEA5 /* ProfileView.swift */; };
-		E08BF5182C2B0E2B007BCEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4F42C2B0E2B007BCEA5 /* ContentView.swift */; };
-		E08BF5192C2B0E2B007BCEA5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E08BF4F72C2B0E2B007BCEA5 /* GoogleService-Info.plist */; };
-		E08BF51A2C2B0E2B007BCEA5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4F82C2B0E2B007BCEA5 /* User.swift */; };
-		E08BF51B2C2B0E2B007BCEA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08BF4FA2C2B0E2B007BCEA5 /* Preview Assets.xcassets */; };
-		E08BF51C2C2B0E2B007BCEA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E08BF4FE2C2B0E2B007BCEA5 /* Assets.xcassets */; };
-		E08BF51D2C2B0E2B007BCEA5 /* loginpageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF4FF2C2B0E2B007BCEA5 /* loginpageTests.swift */; };
-		E08BF51E2C2B0E2B007BCEA5 /* loginpageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF5012C2B0E2B007BCEA5 /* loginpageUITests.swift */; };
-		E08BF51F2C2B0E2B007BCEA5 /* loginpageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08BF5022C2B0E2B007BCEA5 /* loginpageUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,34 +41,22 @@
 			remoteGlobalIDString = 8969A9372C1C8D5D00449F5E;
 			remoteInfo = AquifyATX;
 		};
-		E08BF50B2C2B0E2B007BCEA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E08BF5042C2B0E2B007BCEA5 /* loginpage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 084E50F52C21CFD5006C82C6;
-			remoteInfo = loginpage;
-		};
-		E08BF50D2C2B0E2B007BCEA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E08BF5042C2B0E2B007BCEA5 /* loginpage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 084E51062C21CFDF006C82C6;
-			remoteInfo = loginpageTests;
-		};
-		E08BF50F2C2B0E2B007BCEA5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = E08BF5042C2B0E2B007BCEA5 /* loginpage.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 084E51102C21CFDF006C82C6;
-			remoteInfo = loginpageUITests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8158B85F2C264F5900FBF571 /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		89231B2F2C2C666200247BC0 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		89231B312C2C666200247BC0 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		89231B322C2C666200247BC0 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		89231B342C2C666200247BC0 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		89231B352C2C666200247BC0 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		89231B372C2C666200247BC0 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		89231B392C2C666200247BC0 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89231B3D2C2C666200247BC0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		89231B3F2C2C666200247BC0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89231B4F2C2C6C9D00247BC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8969A9382C1C8D5D00449F5E /* AquifyATX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AquifyATX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8969A93B2C1C8D5D00449F5E /* AquifyATXApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquifyATXApp.swift; sourceTree = "<group>"; };
-		8969A93D2C1C8D5D00449F5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8969A93F2C1C8D5E00449F5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8969A9422C1C8D5E00449F5E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8969A9482C1C8D5E00449F5E /* AquifyATXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquifyATXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,23 +64,6 @@
 		8969A9522C1C8D5E00449F5E /* AquifyATXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AquifyATXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8969A9562C1C8D5E00449F5E /* AquifyATXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquifyATXUITests.swift; sourceTree = "<group>"; };
 		8969A9582C1C8D5E00449F5E /* AquifyATXUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquifyATXUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E08BF4E82C2B0E2B007BCEA5 /* loginpageApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginpageApp.swift; sourceTree = "<group>"; };
-		E08BF4EA2C2B0E2B007BCEA5 /* AuthViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
-		E08BF4EC2C2B0E2B007BCEA5 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		E08BF4ED2C2B0E2B007BCEA5 /* RegistrationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
-		E08BF4EF2C2B0E2B007BCEA5 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
-		E08BF4F02C2B0E2B007BCEA5 /* SettingsRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
-		E08BF4F22C2B0E2B007BCEA5 /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		E08BF4F42C2B0E2B007BCEA5 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		E08BF4F72C2B0E2B007BCEA5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E08BF4F82C2B0E2B007BCEA5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		E08BF4FA2C2B0E2B007BCEA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E08BF4FC2C2B0E2B007BCEA5 /* loginpage.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = loginpage.entitlements; sourceTree = "<group>"; };
-		E08BF4FE2C2B0E2B007BCEA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E08BF4FF2C2B0E2B007BCEA5 /* loginpageTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginpageTests.swift; sourceTree = "<group>"; };
-		E08BF5012C2B0E2B007BCEA5 /* loginpageUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginpageUITests.swift; sourceTree = "<group>"; };
-		E08BF5022C2B0E2B007BCEA5 /* loginpageUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginpageUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E08BF5042C2B0E2B007BCEA5 /* loginpage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = loginpage.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,9 +94,90 @@
 		8158B85C2C264F2500FBF571 /* AquifyATXUI */ = {
 			isa = PBXGroup;
 			children = (
-				8158B85F2C264F5900FBF571 /* MainPageView.swift */,
 			);
 			path = AquifyATXUI;
+			sourceTree = "<group>";
+		};
+		89231B302C2C666200247BC0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89231B2F2C2C666200247BC0 /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89231B332C2C666200247BC0 /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				89231B302C2C666200247BC0 /* ViewModel */,
+				89231B312C2C666200247BC0 /* LoginView.swift */,
+				89231B322C2C666200247BC0 /* RegistrationView.swift */,
+			);
+			path = authentication;
+			sourceTree = "<group>";
+		};
+		89231B362C2C666200247BC0 /* componets */ = {
+			isa = PBXGroup;
+			children = (
+				89231B342C2C666200247BC0 /* InputView.swift */,
+				89231B352C2C666200247BC0 /* SettingsRowView.swift */,
+			);
+			path = componets;
+			sourceTree = "<group>";
+		};
+		89231B382C2C666200247BC0 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				89231B372C2C666200247BC0 /* ProfileView.swift */,
+			);
+			path = profile;
+			sourceTree = "<group>";
+		};
+		89231B3A2C2C666200247BC0 /* route */ = {
+			isa = PBXGroup;
+			children = (
+				89231B392C2C666200247BC0 /* ContentView.swift */,
+			);
+			path = route;
+			sourceTree = "<group>";
+		};
+		89231B3B2C2C666200247BC0 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				89231B332C2C666200247BC0 /* authentication */,
+				89231B362C2C666200247BC0 /* componets */,
+				89231B382C2C666200247BC0 /* profile */,
+				89231B3A2C2C666200247BC0 /* route */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		89231B3E2C2C666200247BC0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				89231B3D2C2C666200247BC0 /* User.swift */,
+				89231B4F2C2C6C9D00247BC0 /* GoogleService-Info.plist */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		89231B402C2C666200247BC0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				89231B3F2C2C666200247BC0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89231B422C2C666200247BC0 /* loginpage */ = {
+			isa = PBXGroup;
+			children = (
+				89231B3B2C2C666200247BC0 /* core */,
+				89231B3E2C2C666200247BC0 /* model */,
+				89231B402C2C666200247BC0 /* Preview Content */,
+			);
+			name = loginpage;
+			path = ../../AquifyATXloginpage/loginpage;
 			sourceTree = "<group>";
 		};
 		8969A92F2C1C8D5D00449F5E = {
@@ -141,7 +187,6 @@
 				8969A93A2C1C8D5D00449F5E /* AquifyATX */,
 				8969A94B2C1C8D5E00449F5E /* AquifyATXTests */,
 				8969A9552C1C8D5E00449F5E /* AquifyATXUITests */,
-				E08BF5052C2B0E2B007BCEA5 /* AquifyATXloginpage */,
 				8969A9392C1C8D5D00449F5E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,8 +204,9 @@
 		8969A93A2C1C8D5D00449F5E /* AquifyATX */ = {
 			isa = PBXGroup;
 			children = (
+				89231B422C2C666200247BC0 /* loginpage */,
 				8969A93B2C1C8D5D00449F5E /* AquifyATXApp.swift */,
-				8969A93D2C1C8D5D00449F5E /* ContentView.swift */,
+				8158B85F2C264F5900FBF571 /* MainPageView.swift */,
 				8969A93F2C1C8D5E00449F5E /* Assets.xcassets */,
 				8969A9412C1C8D5E00449F5E /* Preview Content */,
 			);
@@ -190,136 +236,6 @@
 				8969A9582C1C8D5E00449F5E /* AquifyATXUITestsLaunchTests.swift */,
 			);
 			path = AquifyATXUITests;
-			sourceTree = "<group>";
-		};
-		E08BF4E92C2B0E2B007BCEA5 /* app */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4E82C2B0E2B007BCEA5 /* loginpageApp.swift */,
-			);
-			path = app;
-			sourceTree = "<group>";
-		};
-		E08BF4EB2C2B0E2B007BCEA5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4EA2C2B0E2B007BCEA5 /* AuthViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		E08BF4EE2C2B0E2B007BCEA5 /* authentication */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4EB2C2B0E2B007BCEA5 /* ViewModel */,
-				E08BF4EC2C2B0E2B007BCEA5 /* LoginView.swift */,
-				E08BF4ED2C2B0E2B007BCEA5 /* RegistrationView.swift */,
-			);
-			path = authentication;
-			sourceTree = "<group>";
-		};
-		E08BF4F12C2B0E2B007BCEA5 /* componets */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4EF2C2B0E2B007BCEA5 /* InputView.swift */,
-				E08BF4F02C2B0E2B007BCEA5 /* SettingsRowView.swift */,
-			);
-			path = componets;
-			sourceTree = "<group>";
-		};
-		E08BF4F32C2B0E2B007BCEA5 /* profile */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4F22C2B0E2B007BCEA5 /* ProfileView.swift */,
-			);
-			path = profile;
-			sourceTree = "<group>";
-		};
-		E08BF4F52C2B0E2B007BCEA5 /* route */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4F42C2B0E2B007BCEA5 /* ContentView.swift */,
-			);
-			path = route;
-			sourceTree = "<group>";
-		};
-		E08BF4F62C2B0E2B007BCEA5 /* core */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4EE2C2B0E2B007BCEA5 /* authentication */,
-				E08BF4F12C2B0E2B007BCEA5 /* componets */,
-				E08BF4F32C2B0E2B007BCEA5 /* profile */,
-				E08BF4F52C2B0E2B007BCEA5 /* route */,
-			);
-			path = core;
-			sourceTree = "<group>";
-		};
-		E08BF4F92C2B0E2B007BCEA5 /* model */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4F72C2B0E2B007BCEA5 /* GoogleService-Info.plist */,
-				E08BF4F82C2B0E2B007BCEA5 /* User.swift */,
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		E08BF4FB2C2B0E2B007BCEA5 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4FA2C2B0E2B007BCEA5 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		E08BF4FD2C2B0E2B007BCEA5 /* loginpage */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4E92C2B0E2B007BCEA5 /* app */,
-				E08BF4F62C2B0E2B007BCEA5 /* core */,
-				E08BF4F92C2B0E2B007BCEA5 /* model */,
-				E08BF4FB2C2B0E2B007BCEA5 /* Preview Content */,
-				E08BF4FC2C2B0E2B007BCEA5 /* loginpage.entitlements */,
-			);
-			path = loginpage;
-			sourceTree = "<group>";
-		};
-		E08BF5002C2B0E2B007BCEA5 /* loginpageTests */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4FE2C2B0E2B007BCEA5 /* Assets.xcassets */,
-				E08BF4FF2C2B0E2B007BCEA5 /* loginpageTests.swift */,
-			);
-			path = loginpageTests;
-			sourceTree = "<group>";
-		};
-		E08BF5032C2B0E2B007BCEA5 /* loginpageUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF5012C2B0E2B007BCEA5 /* loginpageUITests.swift */,
-				E08BF5022C2B0E2B007BCEA5 /* loginpageUITestsLaunchTests.swift */,
-			);
-			path = loginpageUITests;
-			sourceTree = "<group>";
-		};
-		E08BF5052C2B0E2B007BCEA5 /* AquifyATXloginpage */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF4FD2C2B0E2B007BCEA5 /* loginpage */,
-				E08BF5002C2B0E2B007BCEA5 /* loginpageTests */,
-				E08BF5032C2B0E2B007BCEA5 /* loginpageUITests */,
-				E08BF5042C2B0E2B007BCEA5 /* loginpage.xcodeproj */,
-			);
-			path = AquifyATXloginpage;
-			sourceTree = SOURCE_ROOT;
-		};
-		E08BF5062C2B0E2B007BCEA5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E08BF50C2C2B0E2B007BCEA5 /* loginpage.app */,
-				E08BF50E2C2B0E2B007BCEA5 /* loginpageTests.xctest */,
-				E08BF5102C2B0E2B007BCEA5 /* loginpageUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,14 +326,11 @@
 				Base,
 			);
 			mainGroup = 8969A92F2C1C8D5D00449F5E;
+			packageReferences = (
+				89231B4E2C2C66E500247BC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 8969A9392C1C8D5D00449F5E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = E08BF5062C2B0E2B007BCEA5 /* Products */;
-					ProjectRef = E08BF5042C2B0E2B007BCEA5 /* loginpage.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				8969A9372C1C8D5D00449F5E /* AquifyATX */,
@@ -427,40 +340,15 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		E08BF50C2C2B0E2B007BCEA5 /* loginpage.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = loginpage.app;
-			remoteRef = E08BF50B2C2B0E2B007BCEA5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E08BF50E2C2B0E2B007BCEA5 /* loginpageTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = loginpageTests.xctest;
-			remoteRef = E08BF50D2C2B0E2B007BCEA5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		E08BF5102C2B0E2B007BCEA5 /* loginpageUITests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = loginpageUITests.xctest;
-			remoteRef = E08BF50F2C2B0E2B007BCEA5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		8969A9362C1C8D5D00449F5E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E08BF51B2C2B0E2B007BCEA5 /* Preview Assets.xcassets in Resources */,
+				89231B4D2C2C666200247BC0 /* Preview Assets.xcassets in Resources */,
+				89231B502C2C6C9D00247BC0 /* GoogleService-Info.plist in Resources */,
 				8969A9432C1C8D5E00449F5E /* Preview Assets.xcassets in Resources */,
 				8969A9402C1C8D5E00449F5E /* Assets.xcassets in Resources */,
-				E08BF5192C2B0E2B007BCEA5 /* GoogleService-Info.plist in Resources */,
-				E08BF51C2C2B0E2B007BCEA5 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,21 +373,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E08BF5132C2B0E2B007BCEA5 /* LoginView.swift in Sources */,
-				E08BF5182C2B0E2B007BCEA5 /* ContentView.swift in Sources */,
-				E08BF5122C2B0E2B007BCEA5 /* AuthViewModel.swift in Sources */,
-				E08BF5172C2B0E2B007BCEA5 /* ProfileView.swift in Sources */,
-				E08BF51F2C2B0E2B007BCEA5 /* loginpageUITestsLaunchTests.swift in Sources */,
-				E08BF51E2C2B0E2B007BCEA5 /* loginpageUITests.swift in Sources */,
-				E08BF5112C2B0E2B007BCEA5 /* loginpageApp.swift in Sources */,
-				E08BF5142C2B0E2B007BCEA5 /* RegistrationView.swift in Sources */,
-				8969A93E2C1C8D5D00449F5E /* ContentView.swift in Sources */,
-				E08BF5152C2B0E2B007BCEA5 /* InputView.swift in Sources */,
-				E08BF51A2C2B0E2B007BCEA5 /* User.swift in Sources */,
-				E08BF51D2C2B0E2B007BCEA5 /* loginpageTests.swift in Sources */,
+				89231B452C2C666200247BC0 /* LoginView.swift in Sources */,
+				89231B4A2C2C666200247BC0 /* ContentView.swift in Sources */,
+				89231B442C2C666200247BC0 /* AuthViewModel.swift in Sources */,
+				89231B492C2C666200247BC0 /* ProfileView.swift in Sources */,
+				89231B462C2C666200247BC0 /* RegistrationView.swift in Sources */,
+				89231B472C2C666200247BC0 /* InputView.swift in Sources */,
+				89231B4C2C2C666200247BC0 /* User.swift in Sources */,
 				8969A93C2C1C8D5D00449F5E /* AquifyATXApp.swift in Sources */,
 				8158B8602C264F5900FBF571 /* MainPageView.swift in Sources */,
-				E08BF5162C2B0E2B007BCEA5 /* SettingsRowView.swift in Sources */,
+				89231B482C2C666200247BC0 /* SettingsRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +543,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AquifyATX/Preview Content\"";
@@ -678,6 +562,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = COBRA.AquifyATX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -689,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AquifyATX/Preview Content\"";
@@ -707,6 +593,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = COBRA.AquifyATX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -829,6 +716,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89231B4E2C2C66E500247BC0 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.28.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 8969A9302C1C8D5D00449F5E /* Project object */;
 }
