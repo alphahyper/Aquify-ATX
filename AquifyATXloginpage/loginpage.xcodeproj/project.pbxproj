@@ -24,6 +24,9 @@
 		084E513D2C246D69006C82C6 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 084E513C2C246D69006C82C6 /* FirebaseFirestoreSwift */; };
 		084E513F2C246D69006C82C6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 084E513E2C246D69006C82C6 /* FirebaseStorage */; };
 		084E51432C246DB7006C82C6 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084E51422C246DB7006C82C6 /* AuthViewModel.swift */; };
+		E035C28A2C2C7B290075FAC3 /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035C2892C2C7B290075FAC3 /* GuestView.swift */; };
+		E035C2902C2C82310075FAC3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035C28F2C2C82310075FAC3 /* MapView.swift */; };
+		E035C2942C2DB3980075FAC3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035C2932C2DB3980075FAC3 /* MapViewModel.swift */; };
 		F9581DAA2C24882F0022A085 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9581DA92C24882F0022A085 /* GoogleService-Info.plist */; };
 		F9581DAC2C2489360022A085 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9581DAB2C2489360022A085 /* FirebaseAuth */; };
 		F9581DAE2C2489360022A085 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F9581DAD2C2489360022A085 /* FirebaseFirestore */; };
@@ -67,6 +70,9 @@
 		084E51332C233264006C82C6 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
 		084E51352C2468C9006C82C6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		084E51422C246DB7006C82C6 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		E035C2892C2C7B290075FAC3 /* GuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
+		E035C28F2C2C82310075FAC3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E035C2932C2DB3980075FAC3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		F9581DA92C24882F0022A085 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -220,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				084E51312C232D8B006C82C6 /* ProfileView.swift */,
+				E035C2892C2C7B290075FAC3 /* GuestView.swift */,
+				E035C28F2C2C82310075FAC3 /* MapView.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -235,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				084E51422C246DB7006C82C6 /* AuthViewModel.swift */,
+				E035C2932C2DB3980075FAC3 /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -385,14 +394,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				084E50FB2C21CFD5006C82C6 /* ContentView.swift in Sources */,
+				E035C28A2C2C7B290075FAC3 /* GuestView.swift in Sources */,
 				084E512C2C21D131006C82C6 /* LoginView.swift in Sources */,
 				084E50F92C21CFD5006C82C6 /* loginpageApp.swift in Sources */,
+				E035C2902C2C82310075FAC3 /* MapView.swift in Sources */,
 				084E512E2C21D398006C82C6 /* InputView.swift in Sources */,
 				084E51362C2468C9006C82C6 /* User.swift in Sources */,
 				084E51322C232D8B006C82C6 /* ProfileView.swift in Sources */,
 				084E51302C2329B5006C82C6 /* RegistrationView.swift in Sources */,
 				084E51342C233264006C82C6 /* SettingsRowView.swift in Sources */,
 				084E51432C246DB7006C82C6 /* AuthViewModel.swift in Sources */,
+				E035C2942C2DB3980075FAC3 /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -556,6 +568,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please give us your location :) :P";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -594,6 +607,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please give us your location :) :P";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;

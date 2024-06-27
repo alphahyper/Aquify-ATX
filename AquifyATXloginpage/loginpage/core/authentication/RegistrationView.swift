@@ -94,6 +94,18 @@ struct RegistrationView: View {
                 }
                 .font(.system(size: 14))
             }
+            
+            //guest button
+            NavigationLink{
+                MapView()
+                    .navigationBarBackButtonHidden(true)
+            } label:{
+                HStack(spacing: 2){
+                    Text("Continue as guest")
+                        .fontWeight(.bold)
+                }
+                .font(.system(size: 14))
+            }
         }
     }
 }
