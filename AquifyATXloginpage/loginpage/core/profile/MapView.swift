@@ -10,20 +10,48 @@ import MapKit
 
 struct MapView: View {
     
+    @EnvironmentObject var avm: AuthViewModel
+    
     @State var camera: MapCameraPosition = .region(MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 30.3, longitude: -97.75), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)))
     
     @StateObject private var vm = MapViewModel()
     
+    var wd = WaterData()
+    var wdlength = WaterData().length
+    
     var body: some View {
-        Map(position: $camera) {
-            UserAnnotation()
+        VStack {
+            Map(position: $camera) {
+                ForEach(0...(wd.length - 1), id: \.self) { ind in
+                    Marker(wd.getName(index: ind), coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(wd.getLat(index: ind)), longitude: CLLocationDegrees(wd.getLong(index: ind))))
+                }
+                
+      
+                UserAnnotation()
+            }
+                .onAppear {
+                    vm.checkLocServices()
+                }
+                .alert(isPresented: $vm.showLSPAlert) {
+                    Alert(title: Text("Alert"), message: Text("this sucks"))
+                }
+            HStack {
+                NavigationLink{
+                    if (avm.userSession == nil) {
+                        NoUserWarningView()
+                    }
+                    else { MapView()
+                            .navigationBarBackButtonHidden(true)
+                    }
+                } label:{
+                    HStack(spacing: 2){
+                        Text("Profile")
+                            .fontWeight(.bold)
+                    }
+                    .font(.system(size: 14))
+                }
+            }
         }
-            .onAppear {
-                vm.checkLocServices()
-            }
-            .alert(isPresented: $vm.showLSPAlert) {
-                Alert(title: Text("Alert"), message: Text("this sucks"))
-            }
     }
 }
 
