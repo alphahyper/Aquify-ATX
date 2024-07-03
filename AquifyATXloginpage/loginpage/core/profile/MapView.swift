@@ -23,7 +23,8 @@ struct MapView: View {
         VStack {
             Map(position: $camera) {
                 ForEach(0...(wd.length - 1), id: \.self) { ind in
-                    Marker(wd.getName(index: ind), coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(wd.getLat(index: ind)), longitude: CLLocationDegrees(wd.getLong(index: ind))))
+                    Marker(wd.getName(index: ind), systemImage: "drop.fill", coordinate: wd.toCoords(index: ind))
+                        .tint(.blue)
                 }
                 
       
@@ -35,7 +36,7 @@ struct MapView: View {
                 .alert(isPresented: $vm.showLSPAlert) {
                     Alert(title: Text("Alert"), message: Text("this sucks"))
                 }
-            HStack {
+            HStack(spacing: 30) {
                 NavigationLink{
                     if (avm.userSession == nil) {
                         NoUserWarningView()
@@ -44,11 +45,49 @@ struct MapView: View {
                             .navigationBarBackButtonHidden(true)
                     }
                 } label:{
-                    HStack(spacing: 2){
+                    VStack(spacing: 4){
+                        Image(systemName: "person.crop.circle")
+                            .padding()
+                            .scaledToFit()
+                            .font(.system(size: 30))
                         Text("Profile")
                             .fontWeight(.bold)
+                            .font(.system(size: 14))
                     }
-                    .font(.system(size: 14))
+                }
+                
+                NavigationLink{
+                    MapView()
+                            .navigationBarBackButtonHidden(true)
+                } label:{
+                    VStack(spacing: 4){
+                        Image(systemName: "map.fill")
+                            .padding()
+                            .scaledToFit()
+                            .font(.system(size: 30))
+                        Text("Map")
+                            .fontWeight(.bold)
+                            .font(.system(size: 14))
+                    }
+                }
+                
+                NavigationLink{
+                    if (avm.userSession == nil) {
+                        NoUserWarningView()
+                    }
+                    else { MapView()
+                            .navigationBarBackButtonHidden(true)
+                    }
+                } label:{
+                    VStack(spacing: 4){
+                        Image(systemName: "gear")
+                            .padding()
+                            .scaledToFit()
+                            .font(.system(size: 30))
+                        Text("Settings")
+                            .fontWeight(.bold)
+                            .font(.system(size: 14))
+                    }
                 }
             }
         }
