@@ -9,50 +9,53 @@ import Foundation
 import MapKit
 import CoreLocation
 
-//enum MapDet {
-//    static let startLoc = CLLocationCoordinate2D(latitude: 30, longitude: -96.5)
-//    static let defSpan = MKCoordinateSpan(latitudeDelta: 0.2, longitudeDelta: 0.2)
-//}
-//
-//final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-//    
-//    override init() {
-//        locationManager = CLLocationManager()
-//    }
-//    
-//    var locationManager: CLLocationManager
-//    
-//    //check if location services are enabled
-//    func checkLocServices() {
-//        if CLLocationManager.locationServicesEnabled() {
-//            locationManager = CLLocationManager()
-//            locationManager.delegate = self
-//        } else {
-//            print("show alert")
-//        }
-//    }
-//    
-//    // check location authorization
-//    func checkLocAuth() {
-//        locationManager.requestWhenInUseAuthorization()
-//        
-//        
-//        switch locationManager.authorizationStatus {
-//            
-//        case .notDetermined:
-//            locationManager.requestWhenInUseAuthorization()
-//        case .restricted:
-//            print("alert: restricted")
-//        case .denied:
-//            print("alert: denied")
-//        case .authorizedAlways, .authorizedWhenInUse:
-//            let locationManager = CLLocationManager()
-//        @unknown default:
-//            break;
-//        }
-//    }
-//    
-//    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-//        checkLocAuth()
-//    }
-//}
+final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+    
+    @Published private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 37.331516, longitude: -121.891054), span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+    @Published var showLSPAlert: Bool = false;
+    @Published var locServicesProper = true {
+        didSet {
+            if !locServicesProper {
+                showLSPAlert = true;
+            }
+        }
+    }
+    
+    var locationManager: CLLocationManager?
+    //?
+    func checkLocServices() {
+        let myQueue = DispatchQueue(label: "custQ")
+        myQueue.async { [self] in
+            if CLLocationManager.locationServicesEnabled() {
+                locationManager = CLLocationManager()
+                locationManager?.delegate = self;
+                //!
+            } else {
+                locServicesProper = false;
+                checkLocAuth()
+            }
+        }
+    }
+    
+    private func checkLocAuth() {
+        
+        guard let locationManager = locationManager else {return}
+        switch locationManager.authorizationStatus {
+            
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .restricted:
+            locationManager.requestWhenInUseAuthorization()
+        case .denied:
+            locationManager.requestWhenInUseAuthorization()
+        case .authorizedAlways, .authorizedWhenInUse:
+            region = MKCoordinateRegion(center: locationManager.location!.coordinate, span: MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5))
+        @unknown default:
+            break
+        }
+    }
+    
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        checkLocAuth()
+    }
+}

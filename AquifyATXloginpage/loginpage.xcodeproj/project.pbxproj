@@ -27,6 +27,8 @@
 		E035C28A2C2C7B290075FAC3 /* GuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035C2892C2C7B290075FAC3 /* GuestView.swift */; };
 		E035C2902C2C82310075FAC3 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035C28F2C2C82310075FAC3 /* MapView.swift */; };
 		E035C2942C2DB3980075FAC3 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E035C2932C2DB3980075FAC3 /* MapViewModel.swift */; };
+		E06924212C38353100762C9B /* NoUserWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06924202C38353100762C9B /* NoUserWarningView.swift */; };
+		E06924232C38356200762C9B /* WaterData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06924222C38356200762C9B /* WaterData.swift */; };
 		F9581DAA2C24882F0022A085 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9581DA92C24882F0022A085 /* GoogleService-Info.plist */; };
 		F9581DAC2C2489360022A085 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F9581DAB2C2489360022A085 /* FirebaseAuth */; };
 		F9581DAE2C2489360022A085 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = F9581DAD2C2489360022A085 /* FirebaseFirestore */; };
@@ -73,6 +75,8 @@
 		E035C2892C2C7B290075FAC3 /* GuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestView.swift; sourceTree = "<group>"; };
 		E035C28F2C2C82310075FAC3 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E035C2932C2DB3980075FAC3 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		E06924202C38353100762C9B /* NoUserWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoUserWarningView.swift; sourceTree = "<group>"; };
+		E06924222C38356200762C9B /* WaterData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterData.swift; sourceTree = "<group>"; };
 		F9581DA92C24882F0022A085 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				084E51352C2468C9006C82C6 /* User.swift */,
+				E06924222C38356200762C9B /* WaterData.swift */,
 				F9581DA92C24882F0022A085 /* GoogleService-Info.plist */,
 			);
 			path = model;
@@ -228,6 +233,7 @@
 				084E51312C232D8B006C82C6 /* ProfileView.swift */,
 				E035C2892C2C7B290075FAC3 /* GuestView.swift */,
 				E035C28F2C2C82310075FAC3 /* MapView.swift */,
+				E06924202C38353100762C9B /* NoUserWarningView.swift */,
 			);
 			path = profile;
 			sourceTree = "<group>";
@@ -395,8 +401,10 @@
 			files = (
 				084E50FB2C21CFD5006C82C6 /* ContentView.swift in Sources */,
 				E035C28A2C2C7B290075FAC3 /* GuestView.swift in Sources */,
+				E06924212C38353100762C9B /* NoUserWarningView.swift in Sources */,
 				084E512C2C21D131006C82C6 /* LoginView.swift in Sources */,
 				084E50F92C21CFD5006C82C6 /* loginpageApp.swift in Sources */,
+				E06924232C38356200762C9B /* WaterData.swift in Sources */,
 				E035C2902C2C82310075FAC3 /* MapView.swift in Sources */,
 				084E512E2C21D398006C82C6 /* InputView.swift in Sources */,
 				084E51362C2468C9006C82C6 /* User.swift in Sources */,
